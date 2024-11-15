@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 50%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        /* Slide images */
+        .slides {
+            display: none;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Fade-in effect */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+
+        /* Navigation links */
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Website!</h1>
+    <p>This is the main page.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vero alias doloribus architecto a aut harum aspernatur. Eos deleniti quisquam, id minima et sit pariatur maiores repellat? Cum, voluptates accusantium?</p>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <img src="../static/imgs/mountains-7774999_640.jpg" class="slides fade">
+        <img src="../static/imgs/river-9155147_640.jpg" class="slides fade">
+        <img src="../static/imgs/winter-9168141_640.jpg" class="slides fade">
+    </div>
+
+    <nav>
+      <a href="../templates/about.html">About Us</a>
+      <a href="../templates/services.html">Our Services</a>
+      <a href="../templates/gallery.html">Gallery</a>
+      <a href="../templates/contact.html">Contact</a>
+      <a href="../templates/mini_game.html">Mini Game</a>
+    </nav>
+
+    <script src="/static/showslides.js"></script>
+</body>
+</html>
